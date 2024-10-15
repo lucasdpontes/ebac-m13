@@ -40,11 +40,11 @@ Desvio padrão por categoria:
 ```
 df_lacteos = df.loc[df['Categoria'] == 'Laticínios']
 
-fig = px.box(df_lacteos, y='Preco_Normal', width=800, height=600, title='Distribuição de preços de produtos lácteos', labels={'Preco_Normal': 'Preço'})
+fig = px.box(df_lacteos, y='Preco_Normal', width=400, height=600, title='Distribuição de preços de produtos lácteos', labels={'Preco_Normal': 'Preço'})
 fig.show()
 ```
 </details>
-<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/boxplot.PNG?raw=true" width=600></p>
+<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/caixa.PNG?raw=true" width=400</p>
 
 
 <details>
@@ -57,7 +57,7 @@ fig = px.bar(df_media_desconto, y='Desconto', width=600, height=600, title='Desc
 fig.show()
 ```
 </details>
-<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/bar.PNG?raw=true" width=600></p>
+<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/barras.PNG?raw=true" width=600></p>
 
 <br><br><h1 align="center">Conclusões</h1>
 
