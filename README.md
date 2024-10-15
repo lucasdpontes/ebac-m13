@@ -21,7 +21,8 @@ Tecnolgias utilizadas:
 <br><br><h1 align="center">Resultados</h1>
 
 Desvio padrão por categoria:
-
+<div align="center">
+  
 | Categoria                      | Desvio padrão do preço   |
 |--------------------------------|---------------:|
 | lacteos                         | 3925.816164    |
@@ -32,8 +33,30 @@ Desvio padrão por categoria:
 | instantaneos-y-sopas            | 1170.232869    |
 | verduras                        | 1012.699625    |
 
+</div>
+<details>
+  <summary>código</summary>
+  
+```
+df_lacteos = df.loc[df['Categoria'] == 'lacteos']
+
+fig = px.box(df_lacteos, y='Preco_Normal', width=800, height=600, title='Distribuição de preços de produtos lácteos', labels={'Preco_Normal': 'Preço'})
+fig.show()
+```
+</details>
 <p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/boxplot.PNG?raw=true" width=600></p>
 
+
+<details>
+  <summary>código</summary>
+  
+```
+df_media_desconto = df.groupby('Categoria')['Desconto'].mean().sort_values(ascending=False)
+
+fig = px.bar(df_media_desconto, y='Desconto', width=800, height=600, title='Desconto médio por categoria', labels={'Categoria': ''})
+fig.show()
+```
+</details>
 <p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/bar.PNG?raw=true" width=600></p>
 
 <br><br><h1 align="center">Conclusões</h1>
