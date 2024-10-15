@@ -20,11 +20,10 @@ Tecnolgias utilizadas:
 
 <br><br><h1 align="center">Resultados</h1>
 
-Desvio padrão por categoria:
 <div align="center">
   
-| Categoria                   | Preço   |
-|-----------------------------|---------------:|
+| Categoria                   | Preço (desvio) |
+|-----------------------------|:--------------:|
 | Beleza & cuidado pessoal    | 1783.556485    |
 | Comidas prontas             | 3095.043478    |
 | Congelados                  | 2108.042553    |
@@ -57,8 +56,29 @@ fig = px.bar(df_media_desconto, y='Desconto', width=600, height=600, title='Desc
 fig.show()
 ```
 </details>
-<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/barras.PNG?raw=true" width=600></p>
+<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/barras.PNG?raw=true" width=400></p>
 
+
+<details>
+  <summary>código</summary>
+  
+```
+df_cat_marca = df.groupby(['Categoria','Marca'])['Desconto'].mean().reset_index()
+
+fig = px.scatter(df_cat_marca, 
+                 x='Desconto', 
+                 y='Marca', 
+                 size='Desconto', 
+                 color='Categoria',
+                 title='Desconto médio por marcas e categoria',
+                 range_x=[0, 1000],
+                 width=800,
+                 labels={'Marca': ''})
+fig.show()
+```
+</details>
+<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/scatter.png?raw=true" width=600</p>
+  
 <br><br><h1 align="center">Conclusões</h1>
 
 - conclusão 1
