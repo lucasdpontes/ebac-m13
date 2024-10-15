@@ -23,22 +23,22 @@ Tecnolgias utilizadas:
 Desvio padrão por categoria:
 <div align="center">
   
-| Categoria                      | Desvio padrão do preço   |
-|--------------------------------|---------------:|
-| lacteos                         | 3925.816164    |
-| belleza-y-cuidado-personal      | 2210.041719    |
-| congelados                      | 2111.539896    |
-| comidas-preparadas              | 2019.911428    |
-| frutas                          | 1639.151114    |
-| instantaneos-y-sopas            | 1170.232869    |
-| verduras                        | 1012.699625    |
+| Categoria                   | Preço   |
+|-----------------------------|---------------:|
+| Beleza & cuidado pessoal    | 1783.556485    |
+| Comidas prontas             | 3095.043478    |
+| Congelados                  | 2108.042553    |
+| Frutas                      | 1724.473684    |
+| Instantâneos e sopas        | 765.491228     |
+| Laticínios                  | 2385.219239    |
+| Verduras                    | 1343.296875    |
 
 </div>
 <details>
   <summary>código</summary>
   
 ```
-df_lacteos = df.loc[df['Categoria'] == 'lacteos']
+df_lacteos = df.loc[df['Categoria'] == 'Laticínios']
 
 fig = px.box(df_lacteos, y='Preco_Normal', width=800, height=600, title='Distribuição de preços de produtos lácteos', labels={'Preco_Normal': 'Preço'})
 fig.show()
@@ -53,7 +53,7 @@ fig.show()
 ```
 df_media_desconto = df.groupby('Categoria')['Desconto'].mean().sort_values(ascending=False)
 
-fig = px.bar(df_media_desconto, y='Desconto', width=800, height=600, title='Desconto médio por categoria', labels={'Categoria': ''})
+fig = px.bar(df_media_desconto, y='Desconto', width=600, height=600, title='Desconto médio por categoria', labels={'Categoria': ''})
 fig.show()
 ```
 </details>
