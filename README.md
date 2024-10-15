@@ -82,5 +82,5 @@ fig.show()
 <br><br><h1 align="center">Conclusões</h1>
 
 - Os maiores descontos médios pertencem às categorias *Beleza & cuidado pessoal* e *Congelados*
-- Poucos produtos com vida curta menor possuem descontos registrados, como Frutas e Verduras, provavelmente devido ao seu ciclo rápido de produção e venda. Uma sugestão é trabalhar com descontos progressivos à medida em que seus prazos de vencimentos se aproximam, a fim de evitar desperdícios
+- Poucos produtos com vida curta menor possuem descontos registrados, como Frutas, verduras e comidas prontas, provavelmente devido ao seu ciclo rápido de produção e venda. Uma sugestão é trabalhar com descontos progressivos à medida em que seus prazos de vencimentos se aproximam, a fim de evitar desperdícios
 - conclusão 3
