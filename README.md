@@ -8,7 +8,7 @@ Extrair insights através de análises estatísticas.
 
 <br><br><h1 align="center">Metodologia e ferramentas</h1>
 
-Cálculo de média, mediana, desvio padrão e análises gráficas.
+Aplicação de estatísticas descritivas como média, mediana, desvio padrão e análises gráficas.
 
 Tecnolgias utilizadas:
 
@@ -19,6 +19,8 @@ Tecnolgias utilizadas:
 - Plotly
 
 <br><br><h1 align="center">Resultados</h1>
+
+Desvio padrão por categoria:
 
 | Categoria                      | Desvio padrão do preço   |
 |--------------------------------|---------------:|
@@ -33,3 +35,9 @@ Tecnolgias utilizadas:
 <p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/boxplot.PNG?raw=true" width=600></p>
 
 <p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/bar.PNG?raw=true" width=600></p>
+
+<br><br><h1 align="center">Conclusões</h1>
+
+- conclusão 1
+- conclusão 2
+- conclusão 3
