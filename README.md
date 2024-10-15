@@ -43,7 +43,7 @@ fig = px.box(df_lacteos, y='Preco_Normal', width=400, height=600, title='Distrib
 fig.show()
 ```
 </details>
-<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/caixa.PNG?raw=true" width=400</p>
+<p align="center"><img src="https://github.com/lucasdpontes/ebac-m13/blob/main/caixa.PNG?raw=true" width=300</p>
 
 
 <details>
@@ -81,6 +81,6 @@ fig.show()
   
 <br><br><h1 align="center">Conclusões</h1>
 
-- conclusão 1
-- conclusão 2
+- Os maiores descontos médios pertencem às categorias *Beleza & cuidado pessoal* e *Congelados*
+- Poucos produtos com vida curta menor possuem descontos registrados, como Frutas e Verduras, provavelmente devido ao seu ciclo rápido de produção e venda. Uma sugestão é trabalhar com descontos progressivos à medida em que seus prazos de vencimentos se aproximam, a fim de evitar desperdícios
 - conclusão 3
